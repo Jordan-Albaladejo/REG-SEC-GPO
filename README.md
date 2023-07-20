@@ -51,12 +51,15 @@ HOW TO USE:
 
 6.2.c) Once the completed comparision is finished, the script will then create an output of the results, with "Expected Value" and "Actual Value" present in the report. The exported report will be located here:
 
-  C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\REGResults\output-REG-audit.csv
-  Note: The script ends by moving the result into a time stamped folder in this location, so as to all for multiple uses of the tool and better auditing trail.
+    C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\REGResults\output-REG-audit.csv
+  
+Note: The script ends by moving the result into a time stamped folder in this location, so as to all for multiple uses of the tool and better auditing trail.
+
 
 6.3.a) Group Policy Objects Audit Tool has the exact same process as the Registry Audit Tool, however leaving the results in the following location:
 
-  C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\GPOResults\output-GPO-audit.csv
-  Note: The script ends by moving the result into a time stamped folder in this location, so as to all for multiple uses of the tool and better auditing trail.
+    C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\GPOResults\output-GPO-audit.csv
+
+Note: The script ends by moving the result into a time stamped folder in this location, so as to all for multiple uses of the tool and better auditing trail.
 
 6.x) This will exit the script.
