@@ -1,53 +1,54 @@
 # REG-SEC-GPO
-REG-SEC-GPO is a Registry and GPO audit and reporting PowerShell tool.
 
-██████╗  ███████╗  █████╗  ██████╗      ███╗   ███╗███████╗
-██╔══██╗ ██╔════╝ ██╔══██╗ ██╔══██╗     ████╗ ████║██╔════╝
-██████╔╝ █████╗   ███████║ ██║    ██║   ██╔████╔██║█████╗  
-██╔══██╗ ██╔══╝   ██╔══██║ ██║    ██║   ██║╚██╔╝██║██╔══╝  
-██║   ██║███████╗ ██║  ██║ ██████╔╝     ██║ ╚═  ██║███████╗
-╚═╝   ╚═╝╚══════╝ ╚═╝  ╚═╝ ╚═════╝      ╚═╝     ╚═╝╚══════╝
-                                                       
+In brief: 
+REG-SEC-GPO is a Registry and GPO auditing and reporting PowerShell tool.
 
-# Terms and Conditions:
+INTRO:
+With the aim to create a baseline for clients that want better security controls and a path to compliance, I wanted to create a tool that could quickly and effectively scan out an environment for their registry keys and GPO's. Then with this information extracted, compare this to "Tapes" or predefined values that reflect what the client, I as a MSSP or a compliance framework desired. Then, finally with this information, I wanted to create an easy to read CSV file that can be extracted and pose as a talking point with the client.
 
-# ******************************************************************************************************
-#WARNING: AUDITING AND REPORTING REGISTRY VALUES AND GROUP POLICY CONFIGURATIONS
-# ******************************************************************************************************
+Due to my inability to write natively in PS, but the avid use of PS in RMM platforms. I thought I would "milk" the AI trend, and use ChatGPT to help form this PS script.
 
-#This PowerShell script is designed to conduct audits and generate reports for registry values and Group Policy Object configurations. It will not make any modifications to the registry system or any GPO configurations.
-
-#IMPORTANT:
-#Even though this script does not intend to modify the registry or any Group Policy Object configurations, improper usage or misunderstanding of the script's output may lead to unintended consequences. It is crucial to thoroughly inspect and understand the script's actions before executing it.
-
-#BEFORE EXECUTION:
-#Consult with the Chief Information Security Officer (CISO), Chief Financial Officer (CFO), Chief Technology Officer (CTO), risk management personnel, compliance management personnel, system administrators, and other relevant parties in your organisation.
-#Ensure that you have thoroughly reviewed and understood the script's actions and potential impact.
-
-#DISCLAIMER:
-#This script is a work in progress, created with the assistance of ChatGPT, and may contain bugs and/or vulnerabilities. Therefore, it should be used at your own discretion and risk. The creator of this script cannot be held responsible for any damages or issues caused by its execution.
-
-#By running this script, you assume all risks and liabilities associated with auditing the registry system and Group Policy Object configurations. The creator of this script cannot be held responsible for any damages or issues caused by #its execution.
-
-#DISCLAIMER:
-#This script is provided as a free resource, without warranties or liabilities of any kind. The creator of this script makes no guarantee regarding its accuracy, reliability, or suitability for any specific purpose. By using this #script, you agree that the creator shall not be held liable for any direct, indirect, incidental, special, exemplary, or consequential damages arising from the use or inability to use this script.
-
-#ADDITIONAL INFORMATION:
-
-#The script is not a substitute for professional security and compliance assessments. It aids in auditing and reporting, but a comprehensive security review should be performed separately.
-#Before executing this script, ensure that you have backups of critical data and registry configurations. In the event of any issues, you can restore the system to a known good state.
-#The script may require administrative privileges to access registry and Group Policy configurations. Run it with appropriate permissions to avoid any limitations or errors.
-#Always verify the script's integrity and authenticity before use. Use the latest version from a trusted source to avoid potential security risks.
-#The script may interact with network resources or external systems for reporting. Ensure that it complies with your organisation's security policies and does not expose sensitive information.
-#Regularly update and review the script to incorporate improvements, security patches, or updates from the community.
-#Any feedback or suggestions to enhance the script's security and reliability are welcome and should be shared with the script's creator.
-#Compliance with data protection regulations and other legal requirements is essential when using this script. Verify that it aligns with your organisation's legal obligations.
-#The script may include optional parameters or configurations. Ensure that you understand their implications before enabling or disabling them.
-
-#Consult with the relevant parties and obtain necessary permissions before proceeding. Ensure that you have thoroughly reviewed and understood the script's actions and potential impact before executing it.
-
-#########################################################################################################################################################################################################
+The name is: REG-SEC-GPO. Pronounced, Ready, Set, Go. A play on words, as it also represents, Registry, Security and Group Policy Objects, as these are the areas it touches on.
 
 
 
+HOW TO USE:
 
+1) Download the REG-SEC-GPO Script and save this in a text editior appending it with the .ps1 extension.
+2) Open Powershell as Administror, navigate to where you saved the .ps1 file. (IE. "CD ../../Users/JohnDoe/Downloads/REG-SEC-GPO.ps1")
+3) Execute the script. (IE. "./REG-SEC-GPO.ps1)
+
+4) Now that it is running, make sure to read the Terms and Conditions, then accept to proceed. Or not and end the journey here.
+5) You will now see the Menu screen.
+
+6) On the menu screen, you have 4 options:
+    [1] Installer
+    [2] Registry Audit Tool
+    [3] Group Policy Objects Audit Tool
+    [x] Exit
+
+6.1.a) Instller will create the following folders in the C:\ Drive:
+    C:\Program Files (x86)\Ingestservices
+    C:\Program Files (x86)\Ingestservices\REG-SEC-GPO
+    C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Tapes
+    C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Tapes\REGTapes
+    C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Tapes\GPOTapes
+    C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results
+    C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\REGResults
+    C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\GPOResults
+
+6.1.b) Installer will create 2 example "Tapes" as well. Tapes are the CSV values that are use to compare to when completeing the auditing scans. I have named them tapes, as they are interchangable. These example tapes can be used to help with understanding the format that can be read by the script. Please see below where the example tapes are created:
+    C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Tapes\REGTapes\input-Reg-Default
+    C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Tapes\GPOTapes\input-GPO-Default
+
+6.2.a) Registry Audit Tool will prompt the user to input the full path location of the "REG Tape", (Remember this is just the CSV lookup/comparision file). If the user presses enter, the default tape is selected.
+6.2.b) Once the tape is selected the script will extract the "Play" the "Tape", reading the values and then use these values to lookup the local machines own values. Comparing them when complete.
+6.2.c) Once the completed comparision is finished, the script will then create an output of the results, with "Expected Value" and "Actual Value" present in the report. The exported report will be located here:
+  C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\REGResults\output-REG-audit.csv
+  Note: The script ends by moving the result into a time stamped folder in this location, so as to all for multiple uses of the tool and better auditing trail.
+
+6.3.a) Group Policy Objects Audit Tool has the exact same process as the Registry Audit Tool, however leaving the results in the following location:
+  C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\GPOResults\output-GPO-audit.csv
+  Note: The script ends by moving the result into a time stamped folder in this location, so as to all for multiple uses of the tool and better auditing trail.
+
+6.x) This will exit the script.
