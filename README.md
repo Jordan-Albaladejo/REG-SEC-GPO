@@ -21,6 +21,8 @@ HOW TO USE:
 4) Now that it is running, make sure to read the Terms and Conditions, then accept to proceed. Or not and end the journey here.
 5) You will now see the Menu screen.
 
+![alt text]([http://url/to/img.png](https://github.com/Jordan-Albaladejo/REG-SEC-GPO/blob/main/Main%20Menu.png))
+
 6) On the menu screen, you have 4 options:
     [1] Installer
     [2] Registry Audit Tool
