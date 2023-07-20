@@ -1,4 +1,4 @@
-# REG-SEC-GPO
+# REG-SEC-GPO (Ready-Set-GO)
 
 In brief: 
 REG-SEC-GPO is a Registry and GPO auditing and reporting PowerShell tool.
