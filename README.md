@@ -14,7 +14,7 @@ The name is: REG-SEC-GPO. Pronounced, Ready, Set, Go. A play on words, as it als
 
 HOW TO USE:
 
-1) Download the REG-SEC-GPO Script and save this in a text editior appending it with the .ps1 extension.
+1) Download the REG-SEC-GPO.ps1 script or save the RAW Script in a text editior appending it with the .ps1 extension.
 2) Open Powershell as Administror, navigate to where you saved the .ps1 file. (IE. "CD ../../Users/JohnDoe/Downloads/REG-SEC-GPO.ps1")
 3) Execute the script. (IE. "./REG-SEC-GPO.ps1)
 
