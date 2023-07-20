@@ -30,6 +30,7 @@ HOW TO USE:
     [x] Exit
 
 6.1.a) Instller will create the following folders in the C:\ Drive:
+
     C:\Program Files (x86)\Ingestservices
     C:\Program Files (x86)\Ingestservices\REG-SEC-GPO
     C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Tapes
@@ -40,16 +41,21 @@ HOW TO USE:
     C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\GPOResults
 
 6.1.b) Installer will create 2 example "Tapes" as well. Tapes are the CSV values that are use to compare to when completeing the auditing scans. I have named them tapes, as they are interchangable. These example tapes can be used to help with understanding the format that can be read by the script. Please see below where the example tapes are created:
+
     C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Tapes\REGTapes\input-Reg-Default
     C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Tapes\GPOTapes\input-GPO-Default
 
 6.2.a) Registry Audit Tool will prompt the user to input the full path location of the "REG Tape", (Remember this is just the CSV lookup/comparision file). If the user presses enter, the default tape is selected.
+
 6.2.b) Once the tape is selected the script will extract the "Play" the "Tape", reading the values and then use these values to lookup the local machines own values. Comparing them when complete.
+
 6.2.c) Once the completed comparision is finished, the script will then create an output of the results, with "Expected Value" and "Actual Value" present in the report. The exported report will be located here:
+
   C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\REGResults\output-REG-audit.csv
   Note: The script ends by moving the result into a time stamped folder in this location, so as to all for multiple uses of the tool and better auditing trail.
 
 6.3.a) Group Policy Objects Audit Tool has the exact same process as the Registry Audit Tool, however leaving the results in the following location:
+
   C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\GPOResults\output-GPO-audit.csv
   Note: The script ends by moving the result into a time stamped folder in this location, so as to all for multiple uses of the tool and better auditing trail.
 
