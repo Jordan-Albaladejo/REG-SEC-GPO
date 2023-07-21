@@ -1,4 +1,5 @@
 # REG-SEC-GPO (Ready-Set-GO)
+![Title Banner Screenshot](https://github.com/Jordan-Albaladejo/REG-SEC-GPO/blob/main/Title_Text.png)
 
 In brief: 
 REG-SEC-GPO is a Registry and GPO auditing and reporting PowerShell tool.
@@ -23,7 +24,7 @@ HOW TO USE:
 6) Now that it is running, make sure to read the Terms and Conditions, then accept to proceed. Or not and end the journey here.
 7) You will now see the Menu screen.
 
-![Menu Screenshot](https://raw.githubusercontent.com/Jordan-Albaladejo/REG-SEC-GPO/main/Main%20Menu.png)
+![Menu Screenshot](https://github.com/Jordan-Albaladejo/REG-SEC-GPO/blob/main/Main_Menu.png)
 
 6) On the menu screen, you have 4 options:
     [1] Installer
