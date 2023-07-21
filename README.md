@@ -1,4 +1,4 @@
-# REG-SEC-GPO (Ready-Set-GO)
+# REG-SEC-GPO v 1.1 (Ready-Set-GO)
 ![Title Banner Screenshot](https://github.com/Jordan-Albaladejo/REG-SEC-GPO/blob/main/Title_Text.png)
 
 In brief: 
@@ -26,10 +26,11 @@ HOW TO USE:
 
 ![Menu Screenshot](https://github.com/Jordan-Albaladejo/REG-SEC-GPO/blob/main/Main_Menu.png)
 
-6) On the menu screen, you have 4 options:
+6) On the menu screen, you have 5 options:
     [1] Installer
-    [2] Registry Audit Tool
-    [3] Group Policy Objects Audit Tool
+    [2] REG
+    [3] SEC
+    [4] GPO
     [x] Exit
 
 6.1.a) Instller will create the following folders in the C:\ Drive:
