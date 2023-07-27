@@ -5,7 +5,7 @@ README.md
 REG-SEC-GPO v2.0 (Ready-Set-GO)
 Pronounced, Ready, Set, Go. A play on words, as it also represents, Registry, Security and Group Policy Objects, as these are the areas it touches on.
 
-
+ 
 Menu Index:
 - Overview
 - Introduction
