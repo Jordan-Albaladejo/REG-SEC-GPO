@@ -159,7 +159,7 @@ Glossary of Terms:
 .) DSS (Data Security Standard): DSS stands for Data Security Standard and is a set of security guidelines and practices used to protect sensitive data. The Security Audit Tools in REG-SEC-GPO also include predefined regex rules based on Australian DSS patterns to scan for sensitive data.
 
 
-
+ 
 Attributions and Credits:
 
 Special thanks to:
