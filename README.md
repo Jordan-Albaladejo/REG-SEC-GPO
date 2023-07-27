@@ -21,7 +21,7 @@ Menu Index:
 		- [i] Installer
 		- [r] Remover
 		- [a] About
-		- [x] Exit
+		- [x ] Exit
 - Screenshots
 - Glossary of Terms
 - Attributions and Credits
