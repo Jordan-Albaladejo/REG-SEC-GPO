@@ -51,12 +51,6 @@ Menu Options:
 On the menu screen, you have the following options:
 
 
-_____________________ ________ 
-\______   \_   _____//  _____/ 
- |       _/|    __)_/   \  ___ 
- |    |   \|        \    \_\  \
- |____|_  /_______  /\______  /
-        \/        \/        \/ 
 
 [1] REG (Registry Audit Tool)
 Nested sub-menu option:
@@ -68,12 +62,7 @@ Nested sub-menu option:
     C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\REGResults\[TimeStampedFolder]
 
 
-  _____________________________  
- /   _____/\_   _____/\_   ___ \ 
- \_____  \  |    __)_ /    \  \/ 
- /        \ |        \\     \____
-/_______  //_______  / \______  /
-        \/         \/         \/ 
+
 
 [2] SEC (Security Audit Tools)
 Nested sub-menu options:
@@ -90,12 +79,7 @@ Nested sub-menu options:
     C:\Program Files (x86)\Ingestservices\REG-SEC-GPO\Results\SECResults\[TimeStampedFolder]
 
 
-  __________________   _____   
- /  _____/\______   \ /  _  \  
-/   \  ___ |     ___//  | |  \ 
-\    \_\  \|    |   /   |_|   \
- \______  /|____|   \_________/
-        \/                     
+
 
 [3] GPO (Group Policy Objects Audit Tool)
 Nested sub-menu option:
@@ -179,22 +163,13 @@ Attributions and Credits:
 
 Special thanks to:
 
- _______  __   __  _______  _______  _______  _______  _______ 
-|       ||  | |  ||   _   ||       ||       ||       ||       |
-|       ||  |_|  ||  |_|  ||_     _||    ___||    _  ||_     _|
-|       ||       ||       |  |   |  |   | __ |   |_| |  |   |  
-|      _||       ||       |  |   |  |   ||  ||    ___|  |   |  
-|     |_ |   _   ||   _   |  |   |  |   |_| ||   |      |   |  
-|_______||__| |__||__| |__|  |___|  |_______||___|      |___|  
+ChatGPT: https://chat.openai.com/
 
 For helping assist with writing and editing of the PowerShell script.
 
-                  __                        __  __    
-______  _____   _/  |_   ____  _______     |__||  | __
-\____ \ \__  \  \   __\ /  _ \ \_  __ \    |  ||  |/ /
-|  |_> > / __ \_ |  |  (  <_> ) |  | \/    |  ||    < 
-|   __/ (____  / |__|   \____/  |__|   /\__|  ||__|_ \
-|__|         \/                        \______|     \/.com
+
+
+Patorjk: http://www.patorjk.com/software/taag/#p=display&f=Patorjk-HeX&t=patorjk
 
 For providing text to ASCII generator.
 
